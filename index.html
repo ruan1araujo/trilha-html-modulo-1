@@ -1,62 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Minha Página</title>
+    <style>
+      .container {
+          display: flex;
+          justify-content: space-between;
+      }
+      .text {
+          flex: 1;
+      }
+      .video {
+          flex: 1;
+      }
+      body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    footer {
+      margin-top: auto;
+      height: 50px;
+      background-color: rgb(236, 3000, 300);
+      color: #331a1acf;
+      text-align: center;
+      line-height: 80px;
+    }
+  </style>
+  
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+   
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <div class="container">
+      <div class="text">
+         <h1 id="inicio"><i>HTML</i> na prática</h1>
+         <ul>
+             <li><a href="#História">Saiba mais sobre a história dos computadores e como eles evoluíram ao longo do tempo.</a></li>
+             <br/>
+             <li><a href="#Clients">Descubra o que são <i>Clients</i>, quais são seus principais usos e como eles funcionam em redes de computadores.</a></li>
+             <br/>
+             <li><a href="#Servers">Entenda o papel fundamental dos <i>Servers</i> na comunicação de rede, incluindo exemplos de serviços que eles podem fornecer.</a></li>
+             <br/>
+             <li><a href="#Estrutura">Conheça a estrutura básica de um documento HTML e aprenda como criar páginas da web usando marcação HTML.</a></li>
+             <br/>
+             <li><a href="#Listas">Aprenda a diferença entre listas ordenadas e não ordenadas em HTML e quando usá-las para organizar conteúdo.</a></li>
+             <br/>
+             <li><a href="#">Explore mais recursos de referência relacionados a computação e desenvolvimento web.</a></li>
+         </ul>
+      </div>
+      <div class="video">
+         <br/>
+         <iframe width="560" height="325" src="https://www.youtube.com/embed/ktHfAap02t8?si=aYBuZlm86RkESe-7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+  </div
+   
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <!-- Conteúdo relacionado aos links -->
+    <br/>
+    
+    
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="História">Saiba mais sobre a história dos computadores</h2>
+    <h3>A história dos computadores pode ser resumida da seguinte forma:</h3>
+    
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p><small><a href="#inicio">(voltar)</a></small></p>
+    <br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mFdUqqwzbVs?si=wdj91ADXZiJK7oGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+      <ol>
+         <li><mark>Dispositivos Antigos:</mark> A história dos computadores começa com dispositivos mecânicos antigos, como o ábaco, usado para cálculos simples, <br> e a Máquina Analítica de Charles Babbage, uma concepção precursora do computador moderno no século XIX.</li>
+         <br/>
+         <li><mark>Computadores Eletrônicos Iniciais:</mark> O ENIAC, concluído em 1945, foi o primeiro computador eletrônico de grande escala. Ele ocupava uma sala inteira e era usada para cálculos militares.</li>
+         <br/>
+         <li><mark>Era dos Transistores:</mark> A invenção do transistor em 1947 permitiu a criação de computadores menores e mais eficientes, levando à produção de computadores comerciais, como o UNIVAC I.</li>
+         <br/>
+         <li><mark>Revolução dos Microcomputadores:</mark> Uma década de 1970 testemunhou a popularização dos microprocessadores, dando origem aos primeiros computadores pessoais, como o Altair 8800 e o Apple II.</li>
+         <br/>
+         <li><mark>Era dos Computadores Pessoais:</mark> Nos anos 1980, a IBM lançou o IBM PC, estabelecendo um padrão para compatibilidade. A Microsoft lançou o MS-DOS e o Windows, tornando-se dominante na indústria.</li>
+         <br/>
+         <li><mark>Era da Internet:</mark> A década de 1990 trouxe a World Wide Web, revolucionando a comunicação e a disseminação de informações. O crescimento da internet e da computação em nuvem transformou a computação.</li>
+         <br/>
+         <li><mark>Computação Quântica </mark>(em desenvolvimento): A pesquisa em computação quântica está em andamento, prometendo uma revolução na capacidade de processamento.</li>
+         <br/>
+         <li><mark>Inteligência Artificial</mark> e Aprendizado de Máquina prometendo uma revolução na capacidade de processamento.</li>
+         <br/>
+      </ol>
+    </p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="Clients">Descubra o que são <i>Clients</i> e como eles funcionam</h2>
+    <p><small><a href="#inicio">(voltar)</a></small></p>
+    <br/>
+    <h3>Clientes são dispositivos ou programas que acessam serviços ou recursos de servidores em uma rede. Descubra como eles desempenham um papel crucial na comunicação digital e como diferentes tipos de clientes são usados em diversos contextos.</h3>
+    <p>
+      <ul>
+         <li>Em redes de computadores, um "cliente" (cliente, em português) é um dispositivo ou software que solicita e recebe serviços, recursos ou informações de um servidor. Os clientes desempenham um papel fundamental na arquitetura cliente-servidor, que é comumente usado na internet e em redes corporativas. Vamos explorar o que são clientes, seus principais usos e como eles funcionam: <li>
+            <h4>O que são clientes ?</h4>
+         </li>  Um cliente é um nó em uma rede de computadores que inicia conexões para acessar recursos ou serviços de um servidor. - Pode ser um dispositivo físico, como um computador pessoal, laptop, smartphone, tablet, ou um programa de software, como um navegador da web ou um cliente de e-mail. <li>
+            <h4>Princípios de Uso dos Clientes</h4>
+         </li> <b>Acesso à Web</b>: Os navegadores da web, como o Google Chrome ou o Mozilla Firefox, são clientes que permitem aos usuários acessar sites e serviços na internet. <br>
+         <b>E-mail</b>: Clientes de e-mail, como o Microsoft Outlook ou o Gmail, são usados ​​para enviar, receber e gerenciar mensagens de e-mail. 
+         <li><h4>Acesso a Serviços de Rede</h4> Clientes VPN (Virtual Private Network) são usados ​​para conectar-se a redes privadas por meio de conexões seguras.</li>
+         <li><h4>Acesso a Servidores de Aplicativos</h4> Aplicativos cliente, como clientes de jogos online, se conectam a servidores de jogos para jogar em tempo real. <li>
+            <h5>Acesso a Bancos de Dados</h5>
+         </li>Ex.: receber e gerenciar mensagens de e-mail. <li>
+            <h5>Transferência de Arquivos</h5>
+         </li><b>Clientes FTP</b> (File Transfer Protocol) permitem que os usuários transfiram arquivos entre seus computadores e servidores remotos.
+         <li>
+            <h5>Acesso a Serviços de Rede</h5>
+         </li> <p><b>Clientes VPN</b> (Virtual Private Network) são usados ​​para conectar-se a redes privadas por meio de conexões seguras.</p> 
+         <li>
+            <h5>Acesso a Servidores de Aplicativos</h5>
+         </li> Ex.: Aplicativos cliente, como clientes de jogos online, se conectam a servidores de jogos para jogar em tempo real.</li>
+        
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+
+
+</li>
+      </ul>
+    </p>
+
+    <h2 id="Servers">Entenda o papel dos <i>Servers</i> na comunicação de rede</h2>
+    <p><small><a href="#inicio">(voltar)</a></small></p>
+    <br/>
+    <p>Os servidores desempenham um papel crucial na comunicação de rede, pois são responsáveis por armazenar, enviar e receber dados na rede. Eles são computadores poderosos que hospedam sites, gerenciam e-mails, processam aplicativos e armazenam arquivos, entre outras funções. Aqui estão alguns exemplos de serviços que os servidores podem fornecer:</p>
+<ul>
+   
+   <li>1. Servidores Web: Eles hospedam sites e permitem que os usuários acessem esses sites através da Internet. Por exemplo, quando você digita www.google.com em seu navegador, você está acessando o servidor web do Google.</li>
+   <br/>
+   <li>2. Servidores de E-mail: Eles gerenciam e armazenam e-mails. Quando você envia um e-mail, ele é enviado para o servidor de e-mail do destinatário através do seu servidor de e-mail.</li>
+   <br/>
+   <li>3. Servidores de Arquivos: Eles armazenam arquivos que podem ser acessados por outros computadores na rede. Isso é útil para empresas que precisam compartilhar arquivos entre funcionários.</li>
+   <br/>
+   <li>4. Servidores de Banco de Dados: Eles armazenam, recuperam e gerenciam dados em um banco de dados. Eles são usados por sites e aplicativos que precisam armazenar grandes quantidades de dados, como sites de comércio eletrônico ou aplicativos de mídia social.</li>
+   <br/>
+   <li>5. Servidores de Aplicativos: Eles hospedam e executam aplicativos que são usados por outros computadores na rede. Isso pode incluir tudo, desde aplicativos de produtividade até jogos online.</li>
+   <br/>
+   <li>6. Servidores DNS (Sistema de Nomes de Domínio): Eles traduzem nomes de domínio (como www.google.com) em endereços IP para que os computadores possam se comunicar entre si através da Internet.</li>
+   <br/>
+   <li>7. Servidores VPN (Rede Privada Virtual): Eles permitem que os usuários se conectem a uma rede privada através da Internet, o que pode aumentar a segurança e a privacidade.</li>
+</ul>
+
+Cada tipo de servidor tem um papel específico a desempenhar na comunicação de rede, garantindo que os dados sejam transmitidos com eficiência e segurança.
+    <h2 id="Estrutura">Conheça a estrutura básica de um documento HTML</h2>
+    <p><small><a href="#inicio">(voltar)</a></small></p>
+    <br/>
+    <p>A estrutura básica de um documento HTML é composta por vários elementos, incluindo:
+      <ul>
+         
+         <p>1. "&lt;" !DOCTYPE html "&gt;": Este é o tipo de documento. Ele ajuda o navegador a entender que o documento é um arquivo HTML.</p>
+         
+         <p>2. &lt;html&gt;: Este é o elemento raiz de uma página HTML.</p>
+         
+         <p>3. &lt;head&gt;: Este elemento contém metadados para a página, como o título da página e links para scripts e folhas de estilo.</p>
+         
+         <p>
+            4. &lt;title&gt;: Este elemento define o título da página, que é exibido na barra de título do navegador.
+         </p>
+         <p>5. &lt;body&gt;: Este elemento contém o conteúdo principal da página web, como texto, imagens, vídeos, etc.</p>
+         
+      </ul>
+      Aqui está um exemplo de como esses elementos são usados para criar uma página web básica:
+      <ol>
+      
+      <li>&lt;!DOCTYPE html&gt;</li>
+      <li>&lt;html&gt;</li>
+      <li>&lt;head&gt;</li>
+          <li>.......&lt;title&gt;Minha primeira página web&lt;/title&gt;</li>
+      <li>&lt;/head&gt;</li>
+      <li>&lt;body&gt;</li>
+      <br/>
+          <li>.......&lt;h1&gt;Olá, mundo!&lt;/h1&gt;</li>
+          <br/>
+          <li>.....&lt;p&gt;Esta é minha primeira página web.&lt;/p&gt;</li>
+          <br/>
+      <li>&lt;/body&gt;</li>
+      <li>&lt;/html&gt;</li>
+      <br/>
+   </ol>
+     <p> Neste exemplo, &lt;h1&gt; e &lt;p&gt; são elementos HTML que definem um cabeçalho e um parágrafo, respectivamente. Você pode adicionar mais elementos conforme necessário para criar a estrutura e o conteúdo desejados para sua página web..</p>
+     <img src="Captura de tela 2023-09-24 095404.png" alt="exemplo">
+
+    <h2 id="Listas">Aprenda a diferença entre listas ordenadas e não ordenadas em HTML</h2>
+    <p><small><a href="#inicio">(voltar)</a></small></p>
+    <br/>
+    <p>Em HTML, temos dois tipos principais de listas: listas ordenadas e listas não ordenadas. A escolha entre usar uma ou outra depende principalmente do tipo de conteúdo que você deseja apresentar..</p>
+    <img src="Captura de tela 2023-09-24 100618.png" alt="exemplo2">
+    <li>Em resumo, use listas não ordenadas quando a ordem dos itens não importa e listas ordenadas quando a sequência é importante.</li>
+    <br/>
+    <h3>Explore mais recursos de referência relacionados a computação e desenvolvimento web.</h3> <br>
+    
+    <a href="https://aws.amazon.com/pt/what-is/compute/" target="_blank" rel="noopener noreferrer">Link referência, relacionados a computação e desenvolvimento web</a>
+    <br/>
+    <!-- Fim do conteúdo relacionado aos links -->
+
+    
+    <footer>RUAN ARAUJO DA SILVA</footer>
+    <footer>Contatos</footer>
+      <footer><a href="https://www.linkedin.com/in/ruan-araujo-da-silva-b0a5b7128">Meu perfil no linkedin</a></footer>
+      <footer><a href="https://github.com/ruan1araujo">github</a></footer>
+      <footer><a href="https://wa.me/5599991146709">Meu Zap</a></footer>
+      <footer>obrigado</footer>
+    
 
 </body>
 </html>
